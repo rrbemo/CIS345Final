@@ -23,6 +23,11 @@
 					<LastName>Double</LastName>
 					<Email>drdouble@gmail.com</Email>
 				</Reference>
+				<Reference>
+					<FirstName>Frank</FirstName>
+					<LastName>Phillipe</LastName>
+					<Email>FP@pingo.com</Email>
+				</Reference>
 			</References>
 		</Employee>
 	</Employees>
