@@ -15,7 +15,6 @@ public class StructuralSummaryHandler extends DefaultHandler {
 	int level;
 	StructuralSummary[] summary;
 	int nodeId;
-	public static String output = "";
 
 	public StructuralSummaryHandler () {
 	    level = 0;
@@ -29,7 +28,6 @@ public class StructuralSummaryHandler extends DefaultHandler {
 		level += 1;
 		nodeId += 1;
     	System.out.println(localName+":"+level+":"+nodeId);
-    	output += localName+":"+level+":"+nodeId;
 		
            /* Missing code end here */
 	}
@@ -41,14 +39,7 @@ public class StructuralSummaryHandler extends DefaultHandler {
            /* Missing code end here */
 	}
 	
-	public static void main(String[] args) throws Exception 
-	{
-		IndexTest();
-	}
-	
-	public static String IndexTest() throws Exception
-	{
-		//String output = "";
+	public static  void main(String[] args) throws Exception {	
 		// Set the directory for xml files
 	    String fileDir = "./xmlDocs"; 			// "." is the relative directory for project
 	    
@@ -72,7 +63,6 @@ public class StructuralSummaryHandler extends DefaultHandler {
 		    		// Attempt to parse the xml structure
 //			    	System.out.println("File to Parse " + filePath + "");
 				    System.out.println("********** Summary of "+fileName+" **********");
-				    output += "********** Summary of "+fileName+" **********";
 				    SAXParserFactory pfactory = SAXParserFactory.newInstance();
 				    pfactory.setValidating(false);
 				    pfactory.setNamespaceAware(true);
@@ -84,7 +74,6 @@ public class StructuralSummaryHandler extends DefaultHandler {
 //				    StructuralSummary ss1 = handler1.summary[0].children.elementAt(0);
 //				    ss1.prettyPrint(0);
 				    System.out.println("**********End Summary of "+fileName+ "**********\n");
-				    output += "**********End Summary of "+fileName+ "**********\n";
 		    	}
 	    	}
 	    }
@@ -94,7 +83,5 @@ public class StructuralSummaryHandler extends DefaultHandler {
 //	    StructuralSummary ss2 = handler2.summary[0].children.elementAt(0);
 //	    System.out.println("Structural Summary of "+file2+":");
 //	    ss2.prettyPrint(0);
-	    
-	    return output;
 	}
 }
