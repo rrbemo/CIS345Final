@@ -1,6 +1,5 @@
 import java.util.Vector;
 
-
 public class StructuralSummary {
 
     public int id;
