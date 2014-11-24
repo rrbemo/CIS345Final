@@ -132,3 +132,4 @@ C:\Users\rrbem_000\Documents\GitHub\CIS345Final\cis345finalapplication\CIS345Fin
 C:\Users\rrbem_000\Documents\GitHub\CIS345Final\cis345finalapplication\CIS345FinalApplication\obj\Debug\CIS345FinalApplication.g.resources
 C:\Users\rrbem_000\Documents\GitHub\CIS345Final\cis345finalapplication\CIS345FinalApplication\obj\Debug\CIS345FinalApplication.Properties.Resources.resources
 C:\Users\rrbem_000\Documents\GitHub\CIS345Final\cis345finalapplication\CIS345FinalApplication\obj\Debug\CIS345FinalApplication.csproj.GenerateResource.Cache
+C:\Users\rrbem_000\Documents\GitHub\CIS345Final\cis345finalapplication\CIS345FinalApplication\obj\Debug\CIS345FinalApplication.csprojResolveAssemblyReference.cache

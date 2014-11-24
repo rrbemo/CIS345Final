@@ -35,7 +35,7 @@ namespace CIS345FinalApplication
             java.io.File[] files = new java.io.File(fileDir).listFiles();
             indexer = new LuceneIndexHandler();
             List<string> elementList = new List<String>();
-
+            elementList.Add("");
             foreach (java.io.File file in files)
             {
                 string filePath = file.getAbsolutePath();
