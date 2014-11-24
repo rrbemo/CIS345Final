@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using javax.xml.parsers;
 using org.xml.sax;
+using System.Text.RegularExpressions;
 
 namespace CIS345FinalApplication
 {
@@ -34,6 +35,7 @@ namespace CIS345FinalApplication
 
             java.io.File[] files = new java.io.File(fileDir).listFiles();
             indexer = new LuceneIndexHandler();
+            List<string> elementList = new List<String>();
 
             foreach (java.io.File file in files)
             {
@@ -58,28 +60,32 @@ namespace CIS345FinalApplication
                         handler = new XMLFileHandler(indexer);
                         reader.setContentHandler(handler);
                         reader.parse(new InputSource(new java.io.FileReader(filePath)));
+
+                        elementList = elementList.Concat(handler.GetElements()).Distinct().ToList();
                     }
                 }
             }
-            cmbTag.ItemsSource = handler.GetElements();
+            cmbTag.ItemsSource = elementList;
         }
 
         private void btnQuery_Click(object sender, RoutedEventArgs e)
         {
             txtOutput.Text = "";
-            //if (String.IsNullOrEmpty(cmbTag.Text) && String.IsNullOrEmpty(txtContent.Text))
-            //{
-            //    txtOutput.Text = "Please enter either a tag or a value to search for.";
-            //    return;
-            //}
-            //else if (!String.IsNullOrEmpty(cmbTag.Text))
-            //{
-            //    if (!handler.GetElements().Contains(cmbTag.Text))
-            //    {
-            //        txtOutput.Text = "Tag '" + cmbTag.Text + "' not found in XML document.";
-            //        return;
-            //    }
-            //}
+            if (String.IsNullOrEmpty(txtContent.Text))
+            {
+                txtOutput.Text = "Please enter a value to search for.";
+                return;
+            }
+            else if (txtContent.Text.Substring(0, 1).Equals("*") || txtContent.Text.Substring(0, 1).Equals("?"))
+            {
+                txtOutput.Text = "A query string can not start with a * or ?. If you want to serach for a literal *, use \"*\".";
+                return;
+            }
+            else if (txtContent.Text.IndexOf('"') >= 0 && (txtContent.Text.IndexOf('"') != 0 || txtContent.Text.LastIndexOf('"') != txtContent.Text.Length -1))
+            {
+                txtOutput.Text = "A literal search query must start and end with a \" mark.";
+                return;
+            }
 
             List<string> results = indexer.SearchIndex(cmbTag.Text, txtContent.Text);
 
