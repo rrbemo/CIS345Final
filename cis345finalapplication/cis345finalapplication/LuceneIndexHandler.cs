@@ -30,7 +30,7 @@ namespace CIS345FinalApplication
             indexOpen = true;
         }
 
-        public void AddDocument(string tag, string value, string filePath)
+        public void AddDocument(string tag, string value, string filePath, string fileContextString)
         {
             if (!indexOpen)
             {
@@ -43,6 +43,7 @@ namespace CIS345FinalApplication
             //We should evaluate if we need to worry about tokenization.
             doc.add(new TextField("content", value, Field.Store.YES));
             doc.add(new TextField("filepath", filePath, Field.Store.YES));
+            doc.add(new TextField("contextstring", fileContextString, Field.Store.YES));
             indexWriter.addDocument(doc);
         }
 
@@ -110,7 +111,8 @@ namespace CIS345FinalApplication
                 string filepath = d.get("filepath");
                 string element = d.get("element");
                 string content = d.get("content");
-                results.Add(new SearchResult() { Element = element, Content = content, Filepath = filepath });
+                string contextstring = d.get("contextstring");
+                results.Add(new SearchResult() { Element = element, Content = content, Filepath = filepath, ContextString = contextstring });
             }
 	      
             // reader can only be closed when there
@@ -126,5 +128,6 @@ namespace CIS345FinalApplication
         public string Filepath { get; set; }
         public string Element { get; set; }
         public string Content { get; set; }
+        public string ContextString { get; set; }
     }
 }

@@ -42,13 +42,19 @@ namespace CIS345FinalApplication
             {
                 return;
             }
+            string fileContextString = "";
             string currentElementContent = "";
-            for (int i = start; i < start + length; i++)
+
+            for (int i = 0; i < ch.Length; i++)
             {
-                currentElementContent += ch[i];
+                fileContextString += ch[i];
+                if (i >= start && i < (start + length))
+                {
+                    currentElementContent += ch[i];
+                }
             }
 
-            indexHandler.AddDocument(currentElement, currentElementContent, currentFileName);
+            indexHandler.AddDocument(currentElement, currentElementContent, currentFileName, fileContextString);
         }
 
         public override void endElement(String uri, String localName, String qName)

@@ -101,5 +101,21 @@ namespace CIS345FinalApplication
 
             dataResults.ItemsSource = results;
         }
+
+        private void dataResults_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            DataGrid grid = sender as DataGrid;
+
+            txtSelectedItem.Text = "";
+            if (grid != null)
+            {
+                SearchResult currItem = grid.SelectedCells[0].Item as SearchResult;
+
+                if (currItem != null)
+                {
+                    txtSelectedItem.Text = currItem.ContextString;
+                }
+            }
+        }
     }
 }
