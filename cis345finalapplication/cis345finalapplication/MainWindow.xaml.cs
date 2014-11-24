@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -29,10 +29,9 @@ namespace CIS345FinalApplication
         public MainWindow()
         {
             InitializeComponent();
-            txtOutput.Text = "";
+            //txtOutput.Text = "";
 
             string fileDir = "./xmlDocs";
-
             java.io.File[] files = new java.io.File(fileDir).listFiles();
             indexer = new LuceneIndexHandler();
             List<string> elementList = new List<String>();
@@ -41,13 +40,12 @@ namespace CIS345FinalApplication
             {
                 string filePath = file.getAbsolutePath();
                 string fileExt = "";
-                string fileName = "";
+                string fileName = file.getName();
 
                 int dotIndex = file.getName().LastIndexOf('.');
                 if (dotIndex > 0)
                 {
                     fileExt = file.getName().Substring(dotIndex + 1);
-                    txtOutput.Text += "Extension: " + fileExt + Environment.NewLine;
 
                     if (fileExt.Equals("xml", StringComparison.OrdinalIgnoreCase))
                     {
@@ -57,7 +55,7 @@ namespace CIS345FinalApplication
                         SAXParser parser = pFactory.newSAXParser();
                         XMLReader reader = parser.getXMLReader();
 
-                        handler = new XMLFileHandler(indexer);
+                        handler = new XMLFileHandler(indexer, fileName);
                         reader.setContentHandler(handler);
                         reader.parse(new InputSource(new java.io.FileReader(filePath)));
 
@@ -86,20 +84,15 @@ namespace CIS345FinalApplication
                 txtOutput.Text = "A literal search query must start and end with a \" mark.";
                 return;
             }
-
-            List<string> results = indexer.SearchIndex(cmbTag.Text, txtContent.Text);
-
-            if (results.Count() < 1)
+            else if (txtContent.Text.Equals("\""))
             {
-                txtOutput.Text = "No results found.";
+                txtOutput.Text = "You can not search for a single \" mark.";
                 return;
             }
 
-            txtOutput.Text += "Results:" + Environment.NewLine;
-            for (int i = 0; i < results.Count(); i++)
-            {
-                txtOutput.Text += (i + 1) + ": " + results.ElementAt(i) + Environment.NewLine;
-            }
+            List<SearchResult> results = indexer.SearchIndex(cmbTag.Text, txtContent.Text);
+
+            dataResults.ItemsSource = results;
         }
     }
 }

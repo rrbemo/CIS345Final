@@ -43,51 +43,51 @@ C:\Dropbox\Sync\School\14 Fall\CIS 345\FinalProject\DotNetFrontend\CIS345FinalAp
 C:\Dropbox\Sync\School\14 Fall\CIS 345\FinalProject\DotNetFrontend\CIS345FinalApplication\CIS345FinalApplication\bin\Debug\IKVM.OpenJDK.XML.XPath.dll
 C:\Dropbox\Sync\School\14 Fall\CIS 345\FinalProject\DotNetFrontend\CIS345FinalApplication\CIS345FinalApplication\bin\Debug\IKVM.Reflection.dll
 C:\Dropbox\Sync\School\14 Fall\CIS 345\FinalProject\DotNetFrontend\CIS345FinalApplication\CIS345FinalApplication\bin\Debug\IKVM.Runtime.JNI.dll
-C:\Users\rrbem_000\Downloads\DotNetFrontend\cis345finalapplication\CIS345FinalApplication\bin\Debug\CIS345FinalApplication.exe.config
-C:\Users\rrbem_000\Downloads\DotNetFrontend\cis345finalapplication\CIS345FinalApplication\obj\Debug\CIS345FinalApplication.exe
-C:\Users\rrbem_000\Downloads\DotNetFrontend\cis345finalapplication\CIS345FinalApplication\obj\Debug\CIS345FinalApplication.pdb
-C:\Users\rrbem_000\Downloads\DotNetFrontend\cis345finalapplication\CIS345FinalApplication\bin\Debug\CIS345FinalApplication.exe
-C:\Users\rrbem_000\Downloads\DotNetFrontend\cis345finalapplication\CIS345FinalApplication\bin\Debug\CIS345FinalApplication.pdb
-C:\Users\rrbem_000\Downloads\DotNetFrontend\cis345finalapplication\CIS345FinalApplication\bin\Debug\ICSharpCode.SharpZipLib.dll
-C:\Users\rrbem_000\Downloads\DotNetFrontend\cis345finalapplication\CIS345FinalApplication\bin\Debug\IKVM.AWT.WinForms.dll
-C:\Users\rrbem_000\Downloads\DotNetFrontend\cis345finalapplication\CIS345FinalApplication\bin\Debug\IKVM.OpenJDK.Beans.dll
-C:\Users\rrbem_000\Downloads\DotNetFrontend\cis345finalapplication\CIS345FinalApplication\bin\Debug\IKVM.OpenJDK.Charsets.dll
-C:\Users\rrbem_000\Downloads\DotNetFrontend\cis345finalapplication\CIS345FinalApplication\bin\Debug\IKVM.OpenJDK.Corba.dll
-C:\Users\rrbem_000\Downloads\DotNetFrontend\cis345finalapplication\CIS345FinalApplication\bin\Debug\IKVM.OpenJDK.Core.dll
-C:\Users\rrbem_000\Downloads\DotNetFrontend\cis345finalapplication\CIS345FinalApplication\bin\Debug\IKVM.OpenJDK.Jdbc.dll
-C:\Users\rrbem_000\Downloads\DotNetFrontend\cis345finalapplication\CIS345FinalApplication\bin\Debug\IKVM.OpenJDK.Management.dll
-C:\Users\rrbem_000\Downloads\DotNetFrontend\cis345finalapplication\CIS345FinalApplication\bin\Debug\IKVM.OpenJDK.Media.dll
-C:\Users\rrbem_000\Downloads\DotNetFrontend\cis345finalapplication\CIS345FinalApplication\bin\Debug\IKVM.OpenJDK.Misc.dll
-C:\Users\rrbem_000\Downloads\DotNetFrontend\cis345finalapplication\CIS345FinalApplication\bin\Debug\IKVM.OpenJDK.Naming.dll
-C:\Users\rrbem_000\Downloads\DotNetFrontend\cis345finalapplication\CIS345FinalApplication\bin\Debug\IKVM.OpenJDK.Remoting.dll
-C:\Users\rrbem_000\Downloads\DotNetFrontend\cis345finalapplication\CIS345FinalApplication\bin\Debug\IKVM.OpenJDK.Security.dll
-C:\Users\rrbem_000\Downloads\DotNetFrontend\cis345finalapplication\CIS345FinalApplication\bin\Debug\IKVM.OpenJDK.SwingAWT.dll
-C:\Users\rrbem_000\Downloads\DotNetFrontend\cis345finalapplication\CIS345FinalApplication\bin\Debug\IKVM.OpenJDK.Text.dll
-C:\Users\rrbem_000\Downloads\DotNetFrontend\cis345finalapplication\CIS345FinalApplication\bin\Debug\IKVM.OpenJDK.Tools.dll
-C:\Users\rrbem_000\Downloads\DotNetFrontend\cis345finalapplication\CIS345FinalApplication\bin\Debug\IKVM.OpenJDK.Util.dll
-C:\Users\rrbem_000\Downloads\DotNetFrontend\cis345finalapplication\CIS345FinalApplication\bin\Debug\IKVM.OpenJDK.XML.API.dll
-C:\Users\rrbem_000\Downloads\DotNetFrontend\cis345finalapplication\CIS345FinalApplication\bin\Debug\IKVM.OpenJDK.XML.Bind.dll
-C:\Users\rrbem_000\Downloads\DotNetFrontend\cis345finalapplication\CIS345FinalApplication\bin\Debug\IKVM.OpenJDK.XML.Crypto.dll
-C:\Users\rrbem_000\Downloads\DotNetFrontend\cis345finalapplication\CIS345FinalApplication\bin\Debug\IKVM.OpenJDK.XML.Parse.dll
-C:\Users\rrbem_000\Downloads\DotNetFrontend\cis345finalapplication\CIS345FinalApplication\bin\Debug\IKVM.OpenJDK.XML.Transform.dll
-C:\Users\rrbem_000\Downloads\DotNetFrontend\cis345finalapplication\CIS345FinalApplication\bin\Debug\IKVM.OpenJDK.XML.WebServices.dll
-C:\Users\rrbem_000\Downloads\DotNetFrontend\cis345finalapplication\CIS345FinalApplication\bin\Debug\IKVM.OpenJDK.XML.XPath.dll
-C:\Users\rrbem_000\Downloads\DotNetFrontend\cis345finalapplication\CIS345FinalApplication\bin\Debug\IKVM.Reflection.dll
-C:\Users\rrbem_000\Downloads\DotNetFrontend\cis345finalapplication\CIS345FinalApplication\bin\Debug\IKVM.Runtime.dll
-C:\Users\rrbem_000\Downloads\DotNetFrontend\cis345finalapplication\CIS345FinalApplication\bin\Debug\IKVM.Runtime.JNI.dll
-C:\Users\rrbem_000\Downloads\DotNetFrontend\cis345finalapplication\CIS345FinalApplication\bin\Debug\lucene-analyzers-common-4.10.2.dll
-C:\Users\rrbem_000\Downloads\DotNetFrontend\cis345finalapplication\CIS345FinalApplication\bin\Debug\lucene-core-4.10.2.dll
-C:\Users\rrbem_000\Downloads\DotNetFrontend\cis345finalapplication\CIS345FinalApplication\bin\Debug\lucene-demo-4.10.2.dll
-C:\Users\rrbem_000\Downloads\DotNetFrontend\cis345finalapplication\CIS345FinalApplication\bin\Debug\lucene-queryparser-4.10.2.dll
-C:\Users\rrbem_000\Downloads\DotNetFrontend\cis345finalapplication\CIS345FinalApplication\bin\Debug\StructuralSummary.dll
-C:\Users\rrbem_000\Downloads\DotNetFrontend\cis345finalapplication\CIS345FinalApplication\obj\Debug\CIS345FinalApplication.csprojResolveAssemblyReference.cache
-C:\Users\rrbem_000\Downloads\DotNetFrontend\cis345finalapplication\CIS345FinalApplication\obj\Debug\MainWindow.baml
-C:\Users\rrbem_000\Downloads\DotNetFrontend\cis345finalapplication\CIS345FinalApplication\obj\Debug\MainWindow.g.cs
-C:\Users\rrbem_000\Downloads\DotNetFrontend\cis345finalapplication\CIS345FinalApplication\obj\Debug\App.g.cs
-C:\Users\rrbem_000\Downloads\DotNetFrontend\cis345finalapplication\CIS345FinalApplication\obj\Debug\CIS345FinalApplication_MarkupCompile.cache
-C:\Users\rrbem_000\Downloads\DotNetFrontend\cis345finalapplication\CIS345FinalApplication\obj\Debug\CIS345FinalApplication.g.resources
-C:\Users\rrbem_000\Downloads\DotNetFrontend\cis345finalapplication\CIS345FinalApplication\obj\Debug\CIS345FinalApplication.Properties.Resources.resources
-C:\Users\rrbem_000\Downloads\DotNetFrontend\cis345finalapplication\CIS345FinalApplication\obj\Debug\CIS345FinalApplication.csproj.GenerateResource.Cache
+C:\Dropbox\Sync\School\14 Fall\CIS 345\FinalProject\workspace\CIS345Final\DotNetFrontend\CIS345FinalApplication\CIS345FinalApplication\bin\Debug\CIS345FinalApplication.exe.config
+C:\Dropbox\Sync\School\14 Fall\CIS 345\FinalProject\workspace\CIS345Final\DotNetFrontend\CIS345FinalApplication\CIS345FinalApplication\obj\Debug\CIS345FinalApplication.exe
+C:\Dropbox\Sync\School\14 Fall\CIS 345\FinalProject\workspace\CIS345Final\DotNetFrontend\CIS345FinalApplication\CIS345FinalApplication\obj\Debug\CIS345FinalApplication.pdb
+C:\Dropbox\Sync\School\14 Fall\CIS 345\FinalProject\workspace\CIS345Final\DotNetFrontend\CIS345FinalApplication\CIS345FinalApplication\bin\Debug\CIS345FinalApplication.exe
+C:\Dropbox\Sync\School\14 Fall\CIS 345\FinalProject\workspace\CIS345Final\DotNetFrontend\CIS345FinalApplication\CIS345FinalApplication\bin\Debug\CIS345FinalApplication.pdb
+C:\Dropbox\Sync\School\14 Fall\CIS 345\FinalProject\workspace\CIS345Final\DotNetFrontend\CIS345FinalApplication\CIS345FinalApplication\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Dropbox\Sync\School\14 Fall\CIS 345\FinalProject\workspace\CIS345Final\DotNetFrontend\CIS345FinalApplication\CIS345FinalApplication\bin\Debug\IKVM.AWT.WinForms.dll
+C:\Dropbox\Sync\School\14 Fall\CIS 345\FinalProject\workspace\CIS345Final\DotNetFrontend\CIS345FinalApplication\CIS345FinalApplication\bin\Debug\IKVM.OpenJDK.Beans.dll
+C:\Dropbox\Sync\School\14 Fall\CIS 345\FinalProject\workspace\CIS345Final\DotNetFrontend\CIS345FinalApplication\CIS345FinalApplication\bin\Debug\IKVM.OpenJDK.Charsets.dll
+C:\Dropbox\Sync\School\14 Fall\CIS 345\FinalProject\workspace\CIS345Final\DotNetFrontend\CIS345FinalApplication\CIS345FinalApplication\bin\Debug\IKVM.OpenJDK.Corba.dll
+C:\Dropbox\Sync\School\14 Fall\CIS 345\FinalProject\workspace\CIS345Final\DotNetFrontend\CIS345FinalApplication\CIS345FinalApplication\bin\Debug\IKVM.OpenJDK.Core.dll
+C:\Dropbox\Sync\School\14 Fall\CIS 345\FinalProject\workspace\CIS345Final\DotNetFrontend\CIS345FinalApplication\CIS345FinalApplication\bin\Debug\IKVM.OpenJDK.Jdbc.dll
+C:\Dropbox\Sync\School\14 Fall\CIS 345\FinalProject\workspace\CIS345Final\DotNetFrontend\CIS345FinalApplication\CIS345FinalApplication\bin\Debug\IKVM.OpenJDK.Management.dll
+C:\Dropbox\Sync\School\14 Fall\CIS 345\FinalProject\workspace\CIS345Final\DotNetFrontend\CIS345FinalApplication\CIS345FinalApplication\bin\Debug\IKVM.OpenJDK.Media.dll
+C:\Dropbox\Sync\School\14 Fall\CIS 345\FinalProject\workspace\CIS345Final\DotNetFrontend\CIS345FinalApplication\CIS345FinalApplication\bin\Debug\IKVM.OpenJDK.Misc.dll
+C:\Dropbox\Sync\School\14 Fall\CIS 345\FinalProject\workspace\CIS345Final\DotNetFrontend\CIS345FinalApplication\CIS345FinalApplication\bin\Debug\IKVM.OpenJDK.Naming.dll
+C:\Dropbox\Sync\School\14 Fall\CIS 345\FinalProject\workspace\CIS345Final\DotNetFrontend\CIS345FinalApplication\CIS345FinalApplication\bin\Debug\IKVM.OpenJDK.Remoting.dll
+C:\Dropbox\Sync\School\14 Fall\CIS 345\FinalProject\workspace\CIS345Final\DotNetFrontend\CIS345FinalApplication\CIS345FinalApplication\bin\Debug\IKVM.OpenJDK.Security.dll
+C:\Dropbox\Sync\School\14 Fall\CIS 345\FinalProject\workspace\CIS345Final\DotNetFrontend\CIS345FinalApplication\CIS345FinalApplication\bin\Debug\IKVM.OpenJDK.SwingAWT.dll
+C:\Dropbox\Sync\School\14 Fall\CIS 345\FinalProject\workspace\CIS345Final\DotNetFrontend\CIS345FinalApplication\CIS345FinalApplication\bin\Debug\IKVM.OpenJDK.Text.dll
+C:\Dropbox\Sync\School\14 Fall\CIS 345\FinalProject\workspace\CIS345Final\DotNetFrontend\CIS345FinalApplication\CIS345FinalApplication\bin\Debug\IKVM.OpenJDK.Tools.dll
+C:\Dropbox\Sync\School\14 Fall\CIS 345\FinalProject\workspace\CIS345Final\DotNetFrontend\CIS345FinalApplication\CIS345FinalApplication\bin\Debug\IKVM.OpenJDK.Util.dll
+C:\Dropbox\Sync\School\14 Fall\CIS 345\FinalProject\workspace\CIS345Final\DotNetFrontend\CIS345FinalApplication\CIS345FinalApplication\bin\Debug\IKVM.OpenJDK.XML.API.dll
+C:\Dropbox\Sync\School\14 Fall\CIS 345\FinalProject\workspace\CIS345Final\DotNetFrontend\CIS345FinalApplication\CIS345FinalApplication\bin\Debug\IKVM.OpenJDK.XML.Bind.dll
+C:\Dropbox\Sync\School\14 Fall\CIS 345\FinalProject\workspace\CIS345Final\DotNetFrontend\CIS345FinalApplication\CIS345FinalApplication\bin\Debug\IKVM.OpenJDK.XML.Crypto.dll
+C:\Dropbox\Sync\School\14 Fall\CIS 345\FinalProject\workspace\CIS345Final\DotNetFrontend\CIS345FinalApplication\CIS345FinalApplication\bin\Debug\IKVM.OpenJDK.XML.Parse.dll
+C:\Dropbox\Sync\School\14 Fall\CIS 345\FinalProject\workspace\CIS345Final\DotNetFrontend\CIS345FinalApplication\CIS345FinalApplication\bin\Debug\IKVM.OpenJDK.XML.Transform.dll
+C:\Dropbox\Sync\School\14 Fall\CIS 345\FinalProject\workspace\CIS345Final\DotNetFrontend\CIS345FinalApplication\CIS345FinalApplication\bin\Debug\IKVM.OpenJDK.XML.WebServices.dll
+C:\Dropbox\Sync\School\14 Fall\CIS 345\FinalProject\workspace\CIS345Final\DotNetFrontend\CIS345FinalApplication\CIS345FinalApplication\bin\Debug\IKVM.OpenJDK.XML.XPath.dll
+C:\Dropbox\Sync\School\14 Fall\CIS 345\FinalProject\workspace\CIS345Final\DotNetFrontend\CIS345FinalApplication\CIS345FinalApplication\bin\Debug\IKVM.Reflection.dll
+C:\Dropbox\Sync\School\14 Fall\CIS 345\FinalProject\workspace\CIS345Final\DotNetFrontend\CIS345FinalApplication\CIS345FinalApplication\bin\Debug\IKVM.Runtime.dll
+C:\Dropbox\Sync\School\14 Fall\CIS 345\FinalProject\workspace\CIS345Final\DotNetFrontend\CIS345FinalApplication\CIS345FinalApplication\bin\Debug\IKVM.Runtime.JNI.dll
+C:\Dropbox\Sync\School\14 Fall\CIS 345\FinalProject\workspace\CIS345Final\DotNetFrontend\CIS345FinalApplication\CIS345FinalApplication\bin\Debug\lucene-analyzers-common-4.10.2.dll
+C:\Dropbox\Sync\School\14 Fall\CIS 345\FinalProject\workspace\CIS345Final\DotNetFrontend\CIS345FinalApplication\CIS345FinalApplication\bin\Debug\lucene-core-4.10.2.dll
+C:\Dropbox\Sync\School\14 Fall\CIS 345\FinalProject\workspace\CIS345Final\DotNetFrontend\CIS345FinalApplication\CIS345FinalApplication\bin\Debug\lucene-demo-4.10.2.dll
+C:\Dropbox\Sync\School\14 Fall\CIS 345\FinalProject\workspace\CIS345Final\DotNetFrontend\CIS345FinalApplication\CIS345FinalApplication\bin\Debug\lucene-queryparser-4.10.2.dll
+C:\Dropbox\Sync\School\14 Fall\CIS 345\FinalProject\workspace\CIS345Final\DotNetFrontend\CIS345FinalApplication\CIS345FinalApplication\bin\Debug\StructuralSummary.dll
+C:\Dropbox\Sync\School\14 Fall\CIS 345\FinalProject\workspace\CIS345Final\DotNetFrontend\CIS345FinalApplication\CIS345FinalApplication\obj\Debug\CIS345FinalApplication.csprojResolveAssemblyReference.cache
+C:\Dropbox\Sync\School\14 Fall\CIS 345\FinalProject\workspace\CIS345Final\DotNetFrontend\CIS345FinalApplication\CIS345FinalApplication\obj\Debug\MainWindow.baml
+C:\Dropbox\Sync\School\14 Fall\CIS 345\FinalProject\workspace\CIS345Final\DotNetFrontend\CIS345FinalApplication\CIS345FinalApplication\obj\Debug\MainWindow.g.cs
+C:\Dropbox\Sync\School\14 Fall\CIS 345\FinalProject\workspace\CIS345Final\DotNetFrontend\CIS345FinalApplication\CIS345FinalApplication\obj\Debug\App.g.cs
+C:\Dropbox\Sync\School\14 Fall\CIS 345\FinalProject\workspace\CIS345Final\DotNetFrontend\CIS345FinalApplication\CIS345FinalApplication\obj\Debug\CIS345FinalApplication_MarkupCompile.cache
+C:\Dropbox\Sync\School\14 Fall\CIS 345\FinalProject\workspace\CIS345Final\DotNetFrontend\CIS345FinalApplication\CIS345FinalApplication\obj\Debug\CIS345FinalApplication.g.resources
+C:\Dropbox\Sync\School\14 Fall\CIS 345\FinalProject\workspace\CIS345Final\DotNetFrontend\CIS345FinalApplication\CIS345FinalApplication\obj\Debug\CIS345FinalApplication.Properties.Resources.resources
+C:\Dropbox\Sync\School\14 Fall\CIS 345\FinalProject\workspace\CIS345Final\DotNetFrontend\CIS345FinalApplication\CIS345FinalApplication\obj\Debug\CIS345FinalApplication.csproj.GenerateResource.Cache
 C:\Users\rrbem_000\Documents\GitHub\CIS345Final\cis345finalapplication\CIS345FinalApplication\bin\Debug\CIS345FinalApplication.exe.config
 C:\Users\rrbem_000\Documents\GitHub\CIS345Final\cis345finalapplication\CIS345FinalApplication\obj\Debug\CIS345FinalApplication.exe
 C:\Users\rrbem_000\Documents\GitHub\CIS345Final\cis345finalapplication\CIS345FinalApplication\obj\Debug\CIS345FinalApplication.pdb
@@ -125,7 +125,6 @@ C:\Users\rrbem_000\Documents\GitHub\CIS345Final\cis345finalapplication\CIS345Fin
 C:\Users\rrbem_000\Documents\GitHub\CIS345Final\cis345finalapplication\CIS345FinalApplication\bin\Debug\lucene-demo-4.10.2.dll
 C:\Users\rrbem_000\Documents\GitHub\CIS345Final\cis345finalapplication\CIS345FinalApplication\bin\Debug\lucene-queryparser-4.10.2.dll
 C:\Users\rrbem_000\Documents\GitHub\CIS345Final\cis345finalapplication\CIS345FinalApplication\bin\Debug\StructuralSummary.dll
-C:\Users\rrbem_000\Documents\GitHub\CIS345Final\cis345finalapplication\CIS345FinalApplication\obj\Debug\CIS345FinalApplication.csprojResolveAssemblyReference.cache
 C:\Users\rrbem_000\Documents\GitHub\CIS345Final\cis345finalapplication\CIS345FinalApplication\obj\Debug\MainWindow.baml
 C:\Users\rrbem_000\Documents\GitHub\CIS345Final\cis345finalapplication\CIS345FinalApplication\obj\Debug\MainWindow.g.cs
 C:\Users\rrbem_000\Documents\GitHub\CIS345Final\cis345finalapplication\CIS345FinalApplication\obj\Debug\App.g.cs

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,6 +9,7 @@ using org.apache.lucene.index;
 using org.apache.lucene.document;
 using org.apache.lucene.search;
 using org.apache.lucene.queryparser.classic;
+using System.Collections.ObjectModel;
 
 namespace CIS345FinalApplication
 {
@@ -29,7 +30,7 @@ namespace CIS345FinalApplication
             indexOpen = true;
         }
 
-        public void AddDocument(string tag, string value)
+        public void AddDocument(string tag, string value, string filePath)
         {
             if (!indexOpen)
             {
@@ -41,11 +42,12 @@ namespace CIS345FinalApplication
             //Can use a string field for content if you don't want it tokenized.
             //We should evaluate if we need to worry about tokenization.
             doc.add(new TextField("content", value, Field.Store.YES));
+            doc.add(new TextField("filepath", filePath, Field.Store.YES));
             indexWriter.addDocument(doc);
         }
 
         //TODO: Consider using an enumeration for the tags or something like that
-        public List<string> SearchIndex(string tag, string value)
+        public List<SearchResult> SearchIndex(string tag, string value)
         {
             if (indexOpen)
             {
@@ -55,10 +57,10 @@ namespace CIS345FinalApplication
 
             if (String.IsNullOrEmpty(tag) && String.IsNullOrEmpty(value))
             {
-                return new List<string>();
+                return new List<SearchResult>();
             }
 
-            List<string> results = new List<string>();
+            List<SearchResult> results = new List<SearchResult>();
             String queryString = "";
 
             // If the tag name is empty, the user doesn't care about the tag, search all tags
@@ -79,7 +81,6 @@ namespace CIS345FinalApplication
             //Query q = new QueryParser(org.apache.lucene.util.Version.LATEST, queryString.Substring(0, queryString.IndexOf(":") - 1), analyzer).parse(queryString);
             Query q = new QueryParser(org.apache.lucene.util.Version.LATEST, "element", analyzer).parse(queryString);
 
-
             int hitsPerPage = 10;
             IndexReader reader = DirectoryReader.open(index);
             IndexSearcher searcher = new IndexSearcher(reader);
@@ -92,8 +93,10 @@ namespace CIS345FinalApplication
             {
                 int docId = hits[i].doc;
                 Document d = searcher.doc(docId);
-                results.Add(d.get("element") + ": " + d.get("content"));
-                //System.out.println((i + 1) + ". " + d.get("isbn") + "\t" + d.get("title"));
+                string filepath = d.get("filepath");
+                string element = d.get("element");
+                string content = d.get("content");
+                results.Add(new SearchResult() { Element = element, Content = content, Filepath = filepath });
             }
 	      
             // reader can only be closed when there
@@ -102,5 +105,12 @@ namespace CIS345FinalApplication
 
             return results;
         }
+    }
+
+    public class SearchResult
+    {
+        public string Filepath { get; set; }
+        public string Element { get; set; }
+        public string Content { get; set; }
     }
 }

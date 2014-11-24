@@ -10,15 +10,14 @@ namespace CIS345FinalApplication
 {
     public class XMLFileHandler : DefaultHandler
     {
-        //private int level = 0;
-        //public string output = "";
         private LuceneIndexHandler indexHandler;
         private string currentElement;
         private List<string> elements;
+        private string currentFileName;
 
-        public XMLFileHandler(LuceneIndexHandler indexer)
+        public XMLFileHandler(LuceneIndexHandler indexer, string filePath)
         {
-            //TODO: constructor
+            currentFileName = filePath;
             indexHandler = indexer;
             elements = new List<string>();
         }
@@ -35,16 +34,6 @@ namespace CIS345FinalApplication
             {
                 elements.Add(localName);
             }
-            //level += 1;
-            //string spacing = "";
-            //for (int i = 0; i < level; i++)
-            //{
-            //    spacing += " ";
-            //}
-            //output += spacing + localName + ":" + level + ": ";
-            //nodeId += 1;
-            //System.out.println(localName+":"+level+":"+nodeId);
-            //output += localName+":"+level+":"+nodeId;
 	    }
 
         public override void characters(char[] ch, int start, int length)
@@ -59,15 +48,12 @@ namespace CIS345FinalApplication
                 currentElementContent += ch[i];
             }
 
-            indexHandler.AddDocument(currentElement, currentElementContent);
+            indexHandler.AddDocument(currentElement, currentElementContent, currentFileName);
         }
 
         public override void endElement(String uri, String localName, String qName)
         {
             currentElement = "";
-            //...not sure what to do???
-            //level -= 1;
-            //output += Environment.NewLine;
         }
     }
 }
