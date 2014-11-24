@@ -1,6 +1,6 @@
-#cis345finalapplication/CIS345FinalApplication/bin/
-#cis345finalapplication/cis345finalapplication/obj/
-#cis345finalapplication/CIS345FinalApplication/obj/Debug/
+cis345finalapplication/cis345finalapplication/bin/
+cis345finalapplication/cis345finalapplication/obj/
+cis345finalapplication/cis345finalapplication/obj/Debug/
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
@@ -13,4 +13,3 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 .classpath
-cis345finalapplication/cis345finalapplication/obj/Debug/App.g.cs
