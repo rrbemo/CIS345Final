@@ -47,7 +47,7 @@ namespace CIS345FinalApplication
         }
 
         //TODO: Consider using an enumeration for the tags or something like that
-        public List<SearchResult> SearchIndex(string tag, string value)
+        public List<SearchResult> SearchIndex(string tag, string value, string file)
         {
             if (indexOpen)
             {
@@ -63,19 +63,33 @@ namespace CIS345FinalApplication
             List<SearchResult> results = new List<SearchResult>();
             String queryString = "";
 
-            // If the tag name is empty, the user doesn't care about the tag, search all tags
-            if (String.IsNullOrEmpty(tag))
+
+            if (!String.IsNullOrEmpty(value))
             {
-                // The query string should end up looking like this: (content:"theContent")
-                // Fround at http://www.lucenetutorial.com/lucene-query-syntax.html
-                queryString = "content:" + value;
-            } 
-            else
-            {
-                // The query string should end up looking like this: (element:"elementName" AND content:"theContent")
-                // Fround at http://www.lucenetutorial.com/lucene-query-syntax.html
-                queryString = "element:" + tag + " AND content:" + value;
+                queryString += "content:" + value;
             }
+            if (!String.IsNullOrEmpty(tag))
+            {
+                queryString += queryString == "" ? "element:" + tag : " AND element:" + tag;
+            }
+            if (!String.IsNullOrEmpty(file))
+            {
+                queryString += queryString == "" ? "filepath:\"" + file + "\"": " AND filepath:\"" + file + "\"";
+            }
+            
+            //// If the tag name is empty, the user doesn't care about the tag, search all tags
+            //if (String.IsNullOrEmpty(tag) && String.IsNullOrEmpty(file))
+            //{
+            //    // The query string should end up looking like this: (content:"theContent")
+            //    // Fround at http://www.lucenetutorial.com/lucene-query-syntax.html
+            //    queryString = "content:" + value;
+            //}
+            //else if (String.IsNullOrEmpty(file))
+            //{
+            //    // The query string should end up looking like this: (element:"elementName" AND content:"theContent")
+            //    // Fround at http://www.lucenetutorial.com/lucene-query-syntax.html
+            //    queryString = "element:" + tag + " AND content:" + value;
+            //}
             
             // Prpare the query parser with the query string created above.
             //Query q = new QueryParser(org.apache.lucene.util.Version.LATEST, queryString.Substring(0, queryString.IndexOf(":") - 1), analyzer).parse(queryString);

@@ -34,13 +34,18 @@ namespace CIS345FinalApplication
             string fileDir = "./xmlDocs";
             java.io.File[] files = new java.io.File(fileDir).listFiles();
             indexer = new LuceneIndexHandler();
-            List<string> elementList = new List<String>();
+            List<string> elementList = new List<string>();
+            List<string> fileList = new List<string>();
+
             elementList.Add("");
+            fileList.Add("");
+
             foreach (java.io.File file in files)
             {
                 string filePath = file.getAbsolutePath();
                 string fileExt = "";
                 string fileName = file.getName();
+                fileList.Add(fileName);
 
                 int dotIndex = file.getName().LastIndexOf('.');
                 if (dotIndex > 0)
@@ -63,7 +68,9 @@ namespace CIS345FinalApplication
                     }
                 }
             }
+            
             cmbTag.ItemsSource = elementList;
+            cmbFile.ItemsSource = fileList;
         }
 
         private void btnQuery_Click(object sender, RoutedEventArgs e)
@@ -90,7 +97,7 @@ namespace CIS345FinalApplication
                 return;
             }
 
-            List<SearchResult> results = indexer.SearchIndex(cmbTag.Text, txtContent.Text);
+            List<SearchResult> results = indexer.SearchIndex(cmbTag.Text, txtContent.Text, cmbFile.Text);
 
             dataResults.ItemsSource = results;
         }
