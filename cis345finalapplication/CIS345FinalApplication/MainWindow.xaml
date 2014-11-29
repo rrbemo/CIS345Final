@@ -28,5 +28,7 @@
         <TextBox Name="txtOutput" Margin="10,0,10,10" TextWrapping="Wrap" Text="" IsReadOnly="True" Grid.Column="1" Height="23" VerticalAlignment="Bottom"/>
         <ComboBox x:Name="cmbFile" Margin="10,41,392,0" VerticalAlignment="Top" Grid.Column="1" Height="22"/>
         <Label x:Name="lblFile" Content="File to Search" HorizontalAlignment="Left" Margin="17,38,0,0" VerticalAlignment="Top" Height="26" Width="81"/>
+        <TextBox x:Name="txtHits" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="402.8,38,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="33"/>
+        <Label x:Name="lblHits" Content="Number of Results" Grid.Column="1" HorizontalAlignment="Left" Margin="288.8,35,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>

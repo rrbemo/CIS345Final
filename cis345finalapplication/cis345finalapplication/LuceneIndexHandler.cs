@@ -48,7 +48,7 @@ namespace CIS345FinalApplication
         }
 
         //TODO: Consider using an enumeration for the tags or something like that
-        public List<SearchResult> SearchIndex(string tag, string value, string file)
+        public List<SearchResult> SearchIndex(string tag, string value, string file, int hitsPerPage)
         {
             if (indexOpen)
             {
@@ -96,7 +96,6 @@ namespace CIS345FinalApplication
             //Query q = new QueryParser(org.apache.lucene.util.Version.LATEST, queryString.Substring(0, queryString.IndexOf(":") - 1), analyzer).parse(queryString);
             Query q = new QueryParser(org.apache.lucene.util.Version.LATEST, "element", analyzer).parse(queryString);
 
-            int hitsPerPage = 10;
             IndexReader reader = DirectoryReader.open(index);
             IndexSearcher searcher = new IndexSearcher(reader);
             TopScoreDocCollector collector = TopScoreDocCollector.create(hitsPerPage, true);
