@@ -1,8 +1,0 @@
-when we're done, place the README.pdf and Presentation.pptx files here. Then lets send it all
-to a zip file, send it, and win this class.
-
-********************************************************************************
-If you notice any problems with the source and recompiles
-the program, just grab the entire contents from the bin/Debug and
-copy/paste to the Program folder (nothing special really)
-********************************************************************************
