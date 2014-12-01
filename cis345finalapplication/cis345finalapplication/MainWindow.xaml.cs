@@ -190,23 +190,12 @@ namespace CIS345FinalApplication
 
             List<SearchResult> results = indexer.SearchIndex(cmbTag.Text, txtContent.Text, cmbFile.Text, hitsPerPage);
 
-            dataResults.ItemsSource = results;
-        }
-
-        private void dataResults_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            DataGrid grid = sender as DataGrid;
-
-            //txtSelectedItem.Text = "";
-            if (grid != null)
+            if (results.Count == 0)
             {
-                SearchResult currItem = grid.SelectedCells[0].Item as SearchResult;
-
-                if (currItem != null)
-                {
-                    //txtSelectedItem.Text = currItem.ContextString;
-                }
+                txtOutput.Text = "No Results";
             }
+
+            dataResults.ItemsSource = results;
         }
     }
 }

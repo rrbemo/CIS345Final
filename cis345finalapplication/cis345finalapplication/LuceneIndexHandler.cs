@@ -16,7 +16,7 @@ namespace CIS345FinalApplication
     public class LuceneIndexHandler
     {
         private Directory index;
-        private StandardAnalyzer analyzer; //the analyzer is deprecated and not included...
+        private StandardAnalyzer analyzer;
         private IndexWriterConfig config;
         private IndexWriter indexWriter;
         private bool indexOpen = false;
@@ -34,20 +34,18 @@ namespace CIS345FinalApplication
         {
             if (!indexOpen)
             {
-                //throw new Exception("The IndexWriter has been closed. Documents can only be added before a query has been executed.");
+                //The IndexWriter has been closed. Documents can only be added before a query has been executed.
+                return;
             }
             Document doc = new Document();
             doc.add(new TextField("element", tag, Field.Store.YES));
 
-            //Can use a string field for content if you don't want it tokenized.
-            //We should evaluate if we need to worry about tokenization.
             doc.add(new TextField("content", value, Field.Store.YES));
             doc.add(new TextField("filepath", filePath, Field.Store.YES));
             doc.add(new TextField("contextstring", fileContextString, Field.Store.YES));
             indexWriter.addDocument(doc);
         }
 
-        //TODO: Consider using an enumeration for the tags or something like that
         public List<SearchResult> SearchIndex(string tag, string value, string file, int hitsPerPage)
         {
             if (indexOpen)
@@ -64,7 +62,6 @@ namespace CIS345FinalApplication
             List<SearchResult> results = new List<SearchResult>();
             String queryString = "";
 
-
             if (!String.IsNullOrEmpty(value))
             {
                 queryString += "content:" + value;
@@ -78,22 +75,7 @@ namespace CIS345FinalApplication
                 queryString += queryString == "" ? "filepath:\"" + file + "\"": " AND filepath:\"" + file + "\"";
             }
             
-            //// If the tag name is empty, the user doesn't care about the tag, search all tags
-            //if (String.IsNullOrEmpty(tag) && String.IsNullOrEmpty(file))
-            //{
-            //    // The query string should end up looking like this: (content:"theContent")
-            //    // Fround at http://www.lucenetutorial.com/lucene-query-syntax.html
-            //    queryString = "content:" + value;
-            //}
-            //else if (String.IsNullOrEmpty(file))
-            //{
-            //    // The query string should end up looking like this: (element:"elementName" AND content:"theContent")
-            //    // Fround at http://www.lucenetutorial.com/lucene-query-syntax.html
-            //    queryString = "element:" + tag + " AND content:" + value;
-            //}
-            
             // Prpare the query parser with the query string created above.
-            //Query q = new QueryParser(org.apache.lucene.util.Version.LATEST, queryString.Substring(0, queryString.IndexOf(":") - 1), analyzer).parse(queryString);
             Query q = new QueryParser(org.apache.lucene.util.Version.LATEST, "element", analyzer).parse(queryString);
 
             IndexReader reader = DirectoryReader.open(index);
@@ -102,7 +84,6 @@ namespace CIS345FinalApplication
             searcher.search(q, collector);
             ScoreDoc[] hits = collector.topDocs().scoreDocs;
 	        
-            //System.out.println("Found " + hits.length + " hits.");
             for(int i=0; i < hits.Length; i++)
             {
                 int docId = hits[i].doc;
